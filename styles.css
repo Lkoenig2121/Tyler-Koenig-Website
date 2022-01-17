@@ -1,175 +1,333 @@
 :root {
-    --main-color: #2596be;
-    --secondary-color: #145369;
-    --black: #13131a;
+  --main-color: #2596be;
+  --secondary-color: #145369;
+  --black: #13131a;
 }
 
-* {   
-    font-family: 'Roboto', sans-serif;
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    /* transition: .2s linear; */
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* transition: .2s linear; */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #7a7a7a;
+  line-height: 30px;
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
 .header {
-    background: white;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    padding: 1rem;
-    justify-content: space-between;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-    border-bottom: 1px solid black;
+  background: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 1rem;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid black;
 }
 
-.header .navbar a{
-    margin: 0 1rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
+.header .navbar a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .header .logo {
-    text-decoration: none;
-    margin: 10px;
+  text-decoration: none;
+  margin: 10px;
 }
 
 .tyler {
-    color: black;
-    font-family: oswald;
-    font-size: 1.7rem;
+  color: black;
+  font-family: oswald;
+  font-size: 1.7rem;
 }
 
 .page {
-    background: black;
-    height: 700px;
+  background: black;
+  height: 700px;
 }
 
 #contactButton {
-    border: 3px solid black;
-    border-radius: 10%;
-    background-color: #adacac;
-    padding: 7px;
-    font-size: 1.7rem;
-    cursor: pointer;
+  border: 3px solid black;
+  border-radius: 10%;
+  background-color: #adacac;
+  padding: 7px;
+  font-size: 1.7rem;
+  cursor: pointer;
 }
 
 .about {
-    padding-top: 17rem;
-    background-color: #145369;
-    /* background-color: #2596be; */
-    color: white;
-    /* background: url(/images/City_Landscape_Background) no-repeat; */
-    height: 700px;
-    border-bottom: 1px solid black;
+  padding-top: 17rem;
+  background-color: #145369;
+  /* background-color: #2596be; */
+  color: white;
+  /* background: url(/images/City_Landscape_Background) no-repeat; */
+  height: 700px;
+  border-bottom: 1px solid black;
 }
 
 .about img {
-    position: relative;
-    top: -21rem;
-    left: 7rem;
-    /* Ask about outline */
+  position: relative;
+  top: -21rem;
+  left: 7rem;
+  /* Ask about outline */
 }
 
 .about img:hover {
-    transform: scale(1.05);
-}     
+  transform: scale(1.05);
+}
 
 .about h1 {
-    position: center;
-    font-size: 4.7rem;
-    margin-left: 500px;
+  position: center;
+  font-size: 4.7rem;
+  margin-left: 500px;
 }
 
 .about p {
-    margin-left: 500px;
-    font-size: 27px;
+  margin-left: 500px;
+  font-size: 27px;
 }
 
 .blackBar {
-    height: 10px;
-    background-color: black;
+  height: 10px;
+  background-color: black;
 }
 
 .mainBlackBar {
-    height: 70px;
-    background-color: black;
+  height: 70px;
+  background-color: black;
 }
 
 .contact {
-    background: white;
+  background: white;
 }
 
 .contact form {
-    align-items: center;
+  align-items: center;
 }
 
 .contact form h3 {
-    position: relative;
-    /* text-align: center; */
-    font-size: 70px;
+  position: relative;
+  /* text-align: center; */
+  font-size: 70px;
 }
 
 .contact form {
-    text-align: center;
-    font-size: 1.6rem; /* This is for the icons */
-    padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem; /* This is for the icons */
+  padding: 1rem;
 }
 
 .contact form .inputBox input {
-    font-size: 1.6rem;
-    border: 1px solid black;
-    margin: 3px;
-}     
+  font-size: 1.6rem;
+  border: 1px solid black;
+  margin: 3px;
+}
 
 .contact form .inputBox textarea {
-    font-size: 1.6rem;
-    border: 1px solid black;
-    margin: 3px;
-    width: 298px;
-    margin-left: 31px;
-    resize: none;
-}     
+  font-size: 1.6rem;
+  border: 1px solid black;
+  margin: 3px;
+  width: 298px;
+  margin-left: 31px;
+  resize: none;
+}
 
 .contact form .submit-btn {
-    outline: 1px solid black;
-    padding: 7px;
-    font-style: bold;
+  outline: 1px solid black;
+  padding: 7px;
+  font-style: bold;
 }
 
 .submit-btn:hover {
-    cursor: pointer;
-    background-color: darkgray;
+  cursor: pointer;
+  background-color: darkgray;
 }
 
 .portfolio {
-    height: 1500px;
-    background-color: #145369;
+  height: 1500px;
+  background-color: #145369;
 }
 
 .portfolio h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: white;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
 }
 
 .portfolio img {
-    display: block;
-    margin-left: 7rem;
-    height: 400px;
+  display: block;
+  margin-left: 7rem;
+  height: 400px;
 }
 
 #right-area div {
-    position: relative;
-    font-size: 70px;
+  position: relative;
+  font-size: 70px;
 }
 
 footer {
-    text-align: center;
-    font: white;
-    background-color: black;
-    margin-top: 10px;
+  text-align: center;
+  font: white;
+  background-color: black;
+  margin-top: 10px;
+}
+
+/* Blog Posts */
+
+.blog-posts {
+  margin-top: 200px;
+}
+
+.blog-posts .blog-post {
+  margin-bottom: 30px;
+}
+
+.blog-posts .blog-thumb img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-posts .down-content {
+  padding: 40px;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-posts .down-content span {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  color: #f48840;
+}
+
+.blog-posts .down-content h4 {
+  font-size: 24px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  color: #20232e;
+  margin: 10px 0px 12px 0px;
+}
+
+.blog-posts .down-content ul.post-info li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.blog-posts .down-content ul.post-info li:after {
+  content: "|";
+  color: #aaa;
+  margin-left: 8px;
+}
+
+.blog-posts .down-content h4 {
+  font-size: 20px;
+  letter-spacing: 0.25px;
+}
+
+.grid-system .down-content ul.post-info li {
+  margin-right: 3px;
+}
+
+.grid-system .down-content ul.post-info li:after {
+  margin-left: 5px;
+}
+
+.blog-posts .down-content ul.post-info li:last-child::after {
+  display: none;
+}
+
+.blog-posts .down-content ul.post-info li a {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.blog-posts .down-content ul.post-info li a:hover {
+  color: #f48840;
+}
+
+.blog-posts .down-content p {
+  padding: 25px 0px;
+  margin: 25px 0px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-posts .down-content ul.post-share {
+  text-align: right;
+}
+
+.blog-posts .down-content ul.post-tags li,
+.blog-posts .down-content ul.post-share li {
+  display: inline-block;
+}
+
+.blog-posts .down-content ul.post-tags li:first-child i,
+.blog-posts .down-content ul.post-share li:first-child i {
+  color: #f48840;
+  margin-right: 5px;
+}
+
+.blog-posts .down-content ul.post-tags li,
+.blog-posts .down-content ul.post-share li {
+  color: #aaa;
+}
+
+/* Sidebar */
+
+.sidebar {
+  margin-left: 30px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #20232e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
 }
