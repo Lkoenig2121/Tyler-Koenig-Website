@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,400&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Richard Koenig</title>
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+
+    <header class="header">
+
+    <a href="index.html" class="logo">
+        <div class="tyler">Richard Koenig</div>
+        <!-- <img src="http://placehold.it/" alt="" width="70" height="50"> -->
+    </a>
+
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#contact" id="contactButton">Contact</a>
+    </nav>
+
+    </header>
+
+    <!-- Header Section Ends -->
+
+    <!-- About Section Starts -->
+
+    <section class="about" id="about">
+
+        <h1 id="aboutMe">About me</h1>
+        <p id="para">'Richard Koenig is a graduate of The College of New Jersey with a <br> concentration in Finance. He has an interest in tech, crypto, investing <br>and politics and how it will shape the future.'</p>
+        <img src="/images/RichardKoenigClose.JPG" height="500px" width="300px">
+
+    </section>
+
+    <div class="mainBlackBar"></div>
+
+    <!-- About Section Ends -->
+
+    <!-- Contact Section Starts -->
+      
+    <section class="contact" id="contact">
+    <!-- Okay so Tyler has to make an account for formspree -->
+    <form action="https://formspree.io/f/xpzbqadv" method="POST">
+        <h3>Get in Touch</h3>
+        <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input autocomplete="off" type="text" name="name" id="name" placeholder="name">
+            <small class="error"></small>
+        </div>
+        <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input autocomplete="off" type="email" name="email" id="email" placeholder="email">
+            <small class="error"></small>
+        </div>
+        <div class="inputBox">
+            <!-- formspree makes us use name=whatever -->
+            <textarea type="text" name="message" id="message" placeholder="message..." rows="2"></textarea>
+            <small class="error"></small>
+        </div>
+
+        <div class="status"></div>
+      
+        <input type="submit" value="contact now" class="submit-btn">
+      
+    </form>
+      
+    </section>
+
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer class="footer" id="footer">
+        <span>Richard Koenig</span>
+    </footer>
+    <!-- Footer Section Ends -->
+      
+</body>
+</html>
+
+      

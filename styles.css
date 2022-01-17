@@ -1,0 +1,175 @@
+:root {
+    --main-color: #2596be;
+    --secondary-color: #145369;
+    --black: #13131a;
+}
+
+* {   
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    /* transition: .2s linear; */
+}
+
+.header {
+    background: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 1rem;
+    justify-content: space-between;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.header .logo {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.tyler {
+    color: black;
+    font-family: oswald;
+    font-size: 1.7rem;
+}
+
+.page {
+    background: black;
+    height: 700px;
+}
+
+#contactButton {
+    border: 3px solid black;
+    border-radius: 10%;
+    background-color: #adacac;
+    padding: 7px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.about {
+    padding-top: 17rem;
+    background-color: #145369;
+    /* background-color: #2596be; */
+    color: white;
+    /* background: url(/images/City_Landscape_Background) no-repeat; */
+    height: 700px;
+    border-bottom: 1px solid black;
+}
+
+.about img {
+    position: relative;
+    top: -21rem;
+    left: 7rem;
+    /* Ask about outline */
+}
+
+.about img:hover {
+    transform: scale(1.05);
+}     
+
+.about h1 {
+    position: center;
+    font-size: 4.7rem;
+    margin-left: 500px;
+}
+
+.about p {
+    margin-left: 500px;
+    font-size: 27px;
+}
+
+.blackBar {
+    height: 10px;
+    background-color: black;
+}
+
+.mainBlackBar {
+    height: 70px;
+    background-color: black;
+}
+
+.contact {
+    background: white;
+}
+
+.contact form {
+    align-items: center;
+}
+
+.contact form h3 {
+    position: relative;
+    /* text-align: center; */
+    font-size: 70px;
+}
+
+.contact form {
+    text-align: center;
+    font-size: 1.6rem; /* This is for the icons */
+    padding: 1rem;
+}
+
+.contact form .inputBox input {
+    font-size: 1.6rem;
+    border: 1px solid black;
+    margin: 3px;
+}     
+
+.contact form .inputBox textarea {
+    font-size: 1.6rem;
+    border: 1px solid black;
+    margin: 3px;
+    width: 298px;
+    margin-left: 31px;
+    resize: none;
+}     
+
+.contact form .submit-btn {
+    outline: 1px solid black;
+    padding: 7px;
+    font-style: bold;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.portfolio {
+    height: 1500px;
+    background-color: #145369;
+}
+
+.portfolio h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.portfolio img {
+    display: block;
+    margin-left: 7rem;
+    height: 400px;
+}
+
+#right-area div {
+    position: relative;
+    font-size: 70px;
+}
+
+footer {
+    text-align: center;
+    font: white;
+    background-color: black;
+    margin-top: 10px;
+}
