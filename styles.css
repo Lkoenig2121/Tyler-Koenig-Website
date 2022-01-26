@@ -52,7 +52,7 @@ h6 {
   display: flex;
   align-items: center;
   position: fixed;
-  padding: 1rem;
+  padding: .5rem;
   justify-content: space-between;
   top: 0;
   left: 0;
@@ -71,6 +71,38 @@ h6 {
 .header .logo {
   text-decoration: none;
   margin: 10px;
+}
+
+.dropdown {
+  font-size: 50px;
+  position: relative;
+  display: none; /* inline-block  */
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: gray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
 }
 
 .tyler {
@@ -207,13 +239,17 @@ footer {
   text-align: center;
   font: white;
   background-color: black;
-  margin-top: 10px;
+  margin-top: 70px;
+}
+
+.footer {
+    font: white;
 }
 
 /* Blog Posts */
 
 .blog-posts {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .blog-posts .blog-post {
@@ -319,6 +355,10 @@ footer {
 
 .sidebar {
   margin-left: 30px;
+  background-color: #2596be;
+  color: white;
+  text-align: center;
+  outline: 1px solid black;
 }
 
 .sidebar h2 {
@@ -326,8 +366,181 @@ footer {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.5px;
-  color: #20232e;
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
   margin-bottom: 25px;
+}
+
+.sideBtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.sideBtn a {
+  text-decoration: none;
+  color: black;
+}
+
+.metaverseArticle {
+    margin-top: 150px;
+}
+
+.metaverseArticle .title {
+  margin-bottom: 20px;
+}
+
+.metaverseArticle h1 {
+    text-align: center;
+}
+
+.metaverseArticle h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.metaverseArticle .lead {
+    margin-top: 40px;
+    text-align: center;
+    font-family: bold;
+    color: black;
+    font-size: 27px;
+    margin-bottom: 40px;
+    font-style: oblique;
+}
+
+.metaverseArticle img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.metaverseArticle p {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.start {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+
+  .header {
+    background: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: .5rem;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+  }
+  
+  .tyler {
+    font-size: 17px;
+  }
+
+  .navbar {
+    display: none;
+  }   
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    right: -8px; /* This makes the dropdown work */
+    font-size: 30px;
+  }
+
+  #contactButton {
+    border: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    border: inherit;
+    padding: 1rem;
+  }
+
+  .about {
+    padding-top: 7rem;
+    background-color: #145369;
+    color: white;
+    height: 700px;
+    border-bottom: 1px solid black;
+  }
+
+  .about img {
+    position: absolute;
+    top: 10rem;
+    left: center;
+  }    
+      
+  .sidebar {
+    margin-bottom: 7rem;
+    right: center;
+  }   
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+      
+  .navbar {
+    display: none;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    right: -8px; /* This makes the dropdown work */
+    font-size: 30px;
+  }
+
+  #contactButton {
+    border: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    border: inherit;
+    padding: 1rem;
+  }
+
+  .about {
+    padding-top: 7rem;
+    background-color: #145369;
+    color: white;
+    height: 700px;
+    border-bottom: 1px solid black;
+    position: relative;
+    display: block;
+  }   
+      
+  .about img {
+    position: absolute;
+    top: 10rem;
+    left: center;
+    display: block;
+  }
+
+  .sidebar {
+    margin-bottom: 7rem;
+    left: center;
+  }
+
+}     
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+      
 }

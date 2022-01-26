@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,400&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,400&display=swap">
 	<link rel="stylesheet" href="styles.css">
 	</link>
 	<title>Richard Koenig</title>
@@ -21,11 +21,23 @@
 			<div class="tyler">Richard Koenig</div>
 			<!-- <img src="http://placehold.it/" alt="" width="70" height="50"> -->
 		</a>
+
+		<div class="dropdown">
+		<button onclick="showList()" class="dropbtn fas fa-align-justify"></button>
+		<div id="myDropdown" class="dropdown-content">	
+			<a href="#about">About</a>
+			<a href="#services">Services</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="#contact" id="contactButton">Contact</a>
+		</div>			
+		</div>
+
 		<nav class="navbar">
 			<a href="#about">About</a>
 			<a href="#services">Services</a>
 			<a href="portfolio.html">Portfolio</a>
 			<a href="#contact" id="contactButton">Contact</a>
+		 </div>
 		</nav>
 	</header>
 	<!-- Header Section Ends -->
@@ -62,14 +74,16 @@
 			<input type="submit" value="contact now" class="submit-btn">
 		</form>
 	</section>
-	<!-- Contact Section Ends -->
+    <!-- Contact Section Ends -->
 	<!-- Footer Section Starts -->
-	<footer class="footer" id="footer">
-		<span>Richard Koenig</span>
-	</footer>
+	<!-- <footer class="footer" id="footer">
+      <span>Richard Koenig</span>
+	</footer> -->
 	<!-- Footer Section Ends -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="script.js" defer></script>
 </body>
 </html>
+
+      

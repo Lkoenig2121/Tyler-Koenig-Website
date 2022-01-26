@@ -22,11 +22,22 @@
 				<div class="tyler">Richard Koenig</div>
 				<!-- <img src="http://placehold.it/" alt="" width="70" height="50"> -->
 			</a>
+
+			<div class="dropdown">
+				<button onclick="showList()" class="dropbtn fas fa-align-justify"></button>
+				<div id="myDropdown" class="dropdown-content">	
+					<a href="index.html#about">About</a>
+					<a href="#services">Services</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="index.html#contact" id="contactButton">Contact</a>
+				</div>			
+			</div>
+
 			<nav class="navbar">
-				<a href="#about">About</a>
+				<a href="index.html#about">About</a>
 				<a href="#services">Services</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="#contact" id="contactButton">Contact</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="index.html#contact" id="contactButton">Contact</a>
 			</nav>
 		</header>
 	</section>
@@ -42,57 +53,51 @@
 							<div class="col-lg-12">
 								<div class="blog-post">
 									<div class="blog-thumb">
+										<a href="metaverse.html">
 										<img src="images/Metaverse.jpg" alt="">
+										</a>
 									</div>
 									<div class="down-content">
-										<a href="Metaverse.html">
 											<h4>The Metaverse</h4>
-										</a>
 										<ul class="post-info">
 											<li><a href="#">Richard Koenig</a></li>
 											<li><a href="#">May 31, 2020</a></li>
 										</ul>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur
-											tempora amet sequi harum minima, exercitationem ex nobis deserunt tenetur ad
-											voluptates alias. Labore assumenda odit a nulla earum quo.</p>
+										<p>One of the big buzzwords being thrown around these days is ‘Metaverse’. You hear it on the news, you read about it on social media… you may have even heard about it from Mark Zuckerberg. But what exactly is it?</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-12">
 								<div class="blog-post">
 									<div class="blog-thumb">
+										<a href="blockchain.html">
 										<img src="images/Blockchain.jpg" alt="">
+										</a>
 									</div>
-									<div class="down-content">
-										<a href="Metaverse.html">
+      								<div class="down-content">
 											<h4>What is Blockchain</h4>
-										</a>
 										<ul class="post-info">
 											<li><a href="#">Richard Koenig</a></li>
 											<li><a href="#">May 31, 2020</a></li>
 										</ul>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur
-											tempora amet sequi harum minima, exercitationem ex nobis deserunt tenetur ad
-											voluptates alias. Labore assumenda odit a nulla earum quo.</p>
-									</div>
+										<p>Unless you’ve been living under a rock for the last few years, chances are you’ve heard of blockchain, a new digital technology taking the world by storm. But what exactly is it?</p>
+      								</div>
 								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="blog-post">
+      						</div>
+      							<div class="col-lg-12">
+      								<div class="blog-post">
 									<div class="blog-thumb">
+										<a href="web3.html">
 										<img src="images/Web3.png" alt="">
+										</a>
 									</div>
 									<div class="down-content">
-										<a href="Metaverse.html">
 											<h4>Web3</h4>
-										</a>
 										<ul class="post-info">
 											<li><a href="#">Richard Koenig</a></li>
-											<li><a href="#">May 31, 2020</a></li>
+      	    								<li><a href="#">May 31, 2020</a></li>
 										</ul>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur
-											tempora amet sequi harum minima, exercitationem ex nobis deserunt tenetur ad
-											voluptates alias. Labore assumenda odit a nulla earum quo.</p>
+										<p>Web3 is the next interaction of the internet. It was coined by Gavin Wood in 2014, a co-founder of Ethereum, which has taken on more popularity in the last couple of years.</p>
 									</div>
 								</div>
 							</div>
@@ -104,10 +109,10 @@
 					<div class="sidebar">
 						<div class="row">
 							<div class="col-lg-12">
-								<h2>This is the sidebar</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae ea rerum
-									ullam. Nostrum a omnis autem possimus, dignissimos repudiandae consequuntur, sed
-									quidem id cum doloribus numquam! Modi, molestias maxime?</p>
+                                <img src="images/Rich.png">
+								<h2>Hi, I'm Richard</h2>
+								<p>I'm a copywriter and content strategist. Learn how to grow your customer base.</p>
+								<button class="sideBtn"><a href="index.html#contact">Contact Now!</a></button>
 							</div>
 						</div>
 					</div>
@@ -118,6 +123,6 @@
 	<!-- Portfolio Section Ends -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="script.js" defer></script>
+	<script src="script.js"></script>
 </body>
 </html>

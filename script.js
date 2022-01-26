@@ -4,7 +4,7 @@ const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const success = document.querySelector("#success");
 const errorNodes = document.querySelectorAll(".error");
-
+      
 $(document).ready(function () {
   $(".submit").click(function (event) {
     var name = $("#name").val();
@@ -33,5 +33,23 @@ $(document).ready(function () {
       statusElm.append("<div>Message cannot be empty</div>");
       event.preventDefault();
     }
+
   });
 });
+
+function showList() { 
+  document.getElementById('myDropdown').classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
