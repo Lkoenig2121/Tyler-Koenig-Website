@@ -514,20 +514,21 @@ footer {
   }
 
   .about {
-    padding-top: 7rem;
+    padding-top: 7rem; /* I want this to be positioned underneath the picture */
     background-color: #145369;
     color: white;
     height: 700px;
     border-bottom: 1px solid black;
-    position: relative;
-    display: block;
+    /* position: idk; */
+    display: inline-block;
+    height: 700px;
   }   
       
   .about img {
     position: absolute;
     top: 10rem;
     left: center;
-    display: block;
+    display: inline-block;
   }
 
   .sidebar {
