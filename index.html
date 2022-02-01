@@ -24,12 +24,12 @@
 
 		<div class="dropdown">
 		<button onclick="showList()" class="dropbtn fas fa-align-justify"></button>
-		<div id="myDropdown" class="dropdown-content">	
+		<div id="myDropdown" class="dropdown-content">
 			<a href="#about">About</a>
 			<a href="#services">Services</a>
 			<a href="portfolio.html">Portfolio</a>
 			<a href="#contact" id="contactButton">Contact</a>
-		</div>			
+		</div>
 		</div>
 
 		<nav class="navbar">
@@ -43,36 +43,46 @@
 	<!-- Header Section Ends -->
 	<!-- About Section Starts -->
 	<section class="about" id="about">
-		<h1 id="aboutMe">About me</h1>
-		<p id="para">'Richard Koenig is a graduate of The College of New Jersey with a <br> concentration in Finance. He
-			has an interest in tech, crypto, investing <br>and politics and how it will shape the future.'</p>
-		<img src="images/RichardKoenigClose.JPG" height="500px" width="300px">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<img class="img-fluid d-flex mx-auto mb-3" src="images/RichardKoenigClose.JPG">
+			</div>
+			<div class="col-12 col-md-6">
+				<h1 class="text-center" id="aboutMe">About me</h1>
+				<p id="para">Richard Koenig is a graduate of The College of New Jersey with a concentration in Finance. He
+			has an interest in tech, crypto, investing and politics and how it will shape the future.</p>
+			</div>
+		</div>
 	</section>
 	<div class="mainBlackBar"></div>
 	<!-- About Section Ends -->
 	<!-- Contact Section Starts -->
 	<section class="contact" id="contact">
-		<!-- Okay so Tyler has to make an account for formspree -->
-		<form action="https://formspree.io/f/xpzbqadv" method="POST">
-			<h3>Get in Touch</h3>
-			<div class="inputBox">
-				<span class="fas fa-user"></span>
-				<input autocomplete="off" type="text" name="name" id="name" placeholder="name">
-				<small class="error"></small>
+		<div class="row">
+			<div class="col">
+				<!-- Okay so Tyler has to make an account for formspree -->
+				<form action="https://formspree.io/f/xpzbqadv" method="POST">
+					<h3 class="text-center">Get in Touch</h3>
+					<div class="inputBox">
+						<span class="fas fa-user"></span>
+						<input class="" autocomplete="off" type="text" name="name" id="name" placeholder="name">
+						<small class="error"></small>
+					</div>
+					<div class="inputBox">
+						<span class="fas fa-envelope"></span>
+						<input autocomplete="off" type="email" name="email" id="email" placeholder="email">
+						<small class="error"></small>
+					</div>
+					<div class="inputBox">
+						<!-- formspree makes us use name=whatever -->
+						<textarea type="text" name="message" id="message" placeholder="message..." rows="2"></textarea>
+						<small class="error"></small>
+					</div>
+					<div class="status"></div>
+					<input type="submit" value="contact now" class="submit-btn">
+				</form>
 			</div>
-			<div class="inputBox">
-				<span class="fas fa-envelope"></span>
-				<input autocomplete="off" type="email" name="email" id="email" placeholder="email">
-				<small class="error"></small>
-			</div>
-			<div class="inputBox">
-				<!-- formspree makes us use name=whatever -->
-				<textarea type="text" name="message" id="message" placeholder="message..." rows="2"></textarea>
-				<small class="error"></small>
-			</div>
-			<div class="status"></div>
-			<input type="submit" value="contact now" class="submit-btn">
-		</form>
+		</div>
 	</section>
     <!-- Contact Section Ends -->
 	<!-- Footer Section Starts -->
@@ -86,4 +96,3 @@
 </body>
 </html>
 
-      

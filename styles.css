@@ -126,34 +126,25 @@ h6 {
 }
 
 .about {
-  padding-top: 17rem;
+  margin-top: 92px; /* header height */
+	padding: 50px;
   background-color: #145369;
-  /* background-color: #2596be; */
   color: white;
   /* background: url(/images/City_Landscape_Background) no-repeat; */
-  height: 700px;
   border-bottom: 1px solid black;
 }
 
-.about img {
-  position: relative;
-  top: -21rem;
-  left: 7rem;
-  /* Ask about outline */
-}
-
+.about img {}
+/*
 .about img:hover {
   transform: scale(1.05);
-}
+} */
 
 .about h1 {
-  position: center;
   font-size: 4.7rem;
-  margin-left: 500px;
 }
 
 .about p {
-  margin-left: 500px;
   font-size: 27px;
 }
 
@@ -443,14 +434,14 @@ footer {
     z-index: 1000;
     border-bottom: 1px solid black;
   }
-  
+
   .tyler {
     font-size: 17px;
   }
 
   .navbar {
     display: none;
-  }   
+  }
 
   .dropdown {
     display: inline-block;
@@ -469,29 +460,15 @@ footer {
     padding: 1rem;
   }
 
-  .about {
-    padding-top: 7rem;
-    background-color: #145369;
-    color: white;
-    height: 700px;
-    border-bottom: 1px solid black;
-  }
-
-  .about img {
-    position: absolute;
-    top: 10rem;
-    left: center;
-  }    
-      
   .sidebar {
     margin-bottom: 7rem;
     right: center;
-  }   
+  }
 
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-      
+
   .navbar {
     display: none;
   }
@@ -513,35 +490,17 @@ footer {
     padding: 1rem;
   }
 
-  .about {
-    padding-top: 7rem; /* I want this to be positioned underneath the picture */
-    background-color: #145369;
-    color: white;
-    height: 700px;
-    border-bottom: 1px solid black;
-    /* position: idk; */
-    display: inline-block;
-    height: 700px;
-  }   
-      
-  .about img {
-    position: absolute;
-    top: 10rem;
-    left: center;
-    display: inline-block;
-  }
-
   .sidebar {
     margin-bottom: 7rem;
     left: center;
   }
 
-}     
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
 }
 
 @media (min-width: 1025px) {
-      
+
 }
